@@ -18,7 +18,7 @@ class SercheTest (unittest.TestCase):
         self.navigtionBarObj = NavigtionBar(self.driver)
         self.serchResaltObj = SerchResalt(self.driver)
         self.produktObj = MensSizes(self.driver)
-        self.navigtionBarObj.go_to_home_page()
+        
 
 
     def test_sercheResalt(self):
@@ -30,6 +30,7 @@ class SercheTest (unittest.TestCase):
         self.produktObj.click_to_size()
         self.produktObj.add_to_cart_button()
         time.sleep(3)
+        self.navigtionBarObj.go_to_home_page()
 
 
 
