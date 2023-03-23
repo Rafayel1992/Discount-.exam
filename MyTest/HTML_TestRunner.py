@@ -1,6 +1,6 @@
 from HTMLTestRunner import HTMLTestRunner
 import unittest
-from MyTest.myTest import  SercheTest
+from MyTest.myTest import SercheTest
 
 class MyTestSuite(unittest.TestCase):
 
