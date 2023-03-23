@@ -30,6 +30,7 @@ class SercheTest (unittest.TestCase):
         self.produktObj.click_to_size()
         self.produktObj.add_to_cart_button()
         time.sleep(3)
+        self.produktObj.click_to_close_button()
         self.navigtionBarObj.go_to_home_page()
 
 
