@@ -4,6 +4,7 @@ from discoutSoes.BasePage.basePage import BasePage
 class NavigtionBarLocator():
     serchFieldLocator = (By.ID,"searchAll")
     clickSerchBottonLocator = (By.XPATH,"//button[@type = 'submit']")
+    goTohomePageLocator = (By.XPATH,"//img[@alt='6pm - Your Premier Destination for Discount Fashion']")
 
 
 class NavigtionBar(NavigtionBarLocator,BasePage):
@@ -21,3 +22,7 @@ class NavigtionBar(NavigtionBarLocator,BasePage):
         searchBottomElement.click()
 
 
+
+    def go_to_home_page(self):
+        clikToHomePageElement = self.find_element(*(self.goTohomePageLocator))
+        clikToHomePageElement.click()
